@@ -1,13 +1,16 @@
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
+import FriendList from './Friendlist/FriendList';
 import user from '../mock/user.json';
 import data from '../mock/data.json';
+import friends from '../mock/friends.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        minHeight: '100vh',
+        margin: '0px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -23,9 +26,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-
-      <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+      <Statistics title="UPLOAD STATS" stats={data} />
+      <FriendList friends={friends} />
+     
     </div>
   );
 };

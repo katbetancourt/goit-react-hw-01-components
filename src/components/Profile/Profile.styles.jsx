@@ -16,18 +16,21 @@ export const ProfileContainer = styled('div')`
   justify-content: center;
   height: 450px;
   width: 400px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 30px 4px 0px rgba(0, 0, 0, 0.5);
   padding: 35px 0 0;
 `;
 
 export const ProfileDescription = styled('div')`
   text-align: center;
+  line-height: 1.8;
 `;
 
 export const ProfileImage = styled('img')`
   border-radius: 50%;
+  object-fit: cover;
   height: 150px;
   width: 150px;
+  padding: 30px 120px;
   border: 0, 5px solid black;
 `;
 
